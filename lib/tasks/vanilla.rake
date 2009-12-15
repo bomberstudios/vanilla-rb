@@ -64,7 +64,7 @@ namespace :vanilla do
   task :upgrade => ["upgrade:dynasnips"]
 
   desc 'Add a user (or change an existing password)'
-  task :add_user => :prepare do
+  task :add_user do
     puts "Adding a new user"
     # config_file = ENV['VANILLA_CONFIG'] || 'config.yml'
     # config_file = YAML.load(File.open(config_file)) rescue {}
