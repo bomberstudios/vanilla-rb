@@ -65,6 +65,7 @@ namespace :vanilla do
 
   desc 'Add a user (or change an existing password)'
   task :add_user do
+    require 'md5'
     puts "Adding a new user"
     # config_file = ENV['VANILLA_CONFIG'] || 'config.yml'
     # config_file = YAML.load(File.open(config_file)) rescue {}
